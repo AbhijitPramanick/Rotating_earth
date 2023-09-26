@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Globe</title>
+    <style>
+      .earth {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 450px;
+        width: 450px;
+        background-image: url(/earthImg.jpg);
+        border-radius: 50%;
+        background-size: cover;
+        box-shadow: -20px -20px 50px 2px #000 inset, 0px 0px 20px 2px #000 inset;
+        animation: spin 30s linear alternate infinite;
+      }
+      @keyframes spin {
+        100% {
+          background-position: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="earth"></div>
+  </body>
+</html>
